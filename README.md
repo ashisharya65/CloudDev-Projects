@@ -1,2 +1,2 @@
 # CloudDev-Projects
-Projects that I have taken to learn Cloud Engineering.
+Projects that I have taken to deep dive in Engineering.
