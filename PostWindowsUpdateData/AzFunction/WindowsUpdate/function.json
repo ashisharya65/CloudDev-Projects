@@ -1,0 +1,24 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "Request",
+      "methods": [
+        "post"
+      ],
+      "route": "PostWindowsUpdate"
+    },
+    {
+      "name": "CosmosOut",
+      "type": "cosmosDB",
+      "databaseName": "DumpWindowsUpdateData",
+      "container": "WindowsUpdate",
+      "createIfNotExists": true,
+      "connectionStringSetting": "",
+      "partitionKey": "/deviceid",
+      "direction": "out"
+    }
+  ]
+}
