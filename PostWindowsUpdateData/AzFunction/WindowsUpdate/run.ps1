@@ -1,8 +1,7 @@
 param($Request, $TriggerMetadata)
 
 # Read the incoming JSON data from the HTTP request body
-$requestBody = Get-Content -Raw -Path $Request.Body 
-$UpdateData = $requestBody | ConvertFrom-Json
+$UpdateData = $Request.Body | ConvertFrom-Json
 
 # Process each update record from the request body
 $CosmosOut = @()
